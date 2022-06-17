@@ -1,25 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import Video from "./assets/video/pexels-pavel-danilyuk-7218609.mp4";
+import "./assets/css/main.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <video autoPlay muted loop src={Video} className="main-video"></video>;
 }
 
 export default App;
