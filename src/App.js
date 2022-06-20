@@ -37,7 +37,7 @@ const App = () => {
       <Main>
         <div className="grid h-screen place-items-center">
           <Title>
-            ❤️ Calefth Manases 💙
+            ❤️ Calefth Manasés 💙
           </Title>
         </div>
       </Main>
