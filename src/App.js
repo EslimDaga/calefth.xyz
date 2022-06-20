@@ -20,11 +20,27 @@ const Main = styled.div`
   top: 0;
 `;
 
+const Title = styled.h1`
+  color: #f8cf2d;
+  font-size: 55px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  text-shadow: 6px 6px 0px rgb(0 0 0 / 20%);
+  font-family: "Pacifico";
+`;
+
 const App = () => {
   return (
     <>
       <Video autoPlay muted loop src={video}></Video>
-      <Main></Main>
+      <Main>
+        <div className="grid h-screen place-items-center">
+          <Title>
+            ❤️ Calefth Manases 💙
+          </Title>
+        </div>
+      </Main>
     </>
   );
 }
