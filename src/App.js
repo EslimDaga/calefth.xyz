@@ -22,7 +22,6 @@ const Main = styled.div`
 
 const Title = styled.h1`
   color: #f8cf2d;
-  font-size: 55px;
   margin: 0;
   padding: 0;
   letter-spacing: 2px;
@@ -35,10 +34,12 @@ const App = () => {
     <>
       <Video autoPlay muted loop src={video}></Video>
       <Main>
-        <div className="grid h-screen place-items-center">
-          <Title>
-            ❤️ Calefth Manasés 💙
-          </Title>
+        <div className="flex h-screen">
+          <div className="m-auto">
+            <Title className="text-[35px] sm:text-[40px] md:text-[45px] lg:text-[50px]">
+              ❤️ Calefth Manasés 💙
+            </Title>
+          </div>
         </div>
       </Main>
     </>
