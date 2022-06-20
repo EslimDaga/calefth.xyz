@@ -3,11 +3,12 @@ import video from "./assets/video/pexels-pavel-danilyuk-7218609.mp4";
 import "./assets/css/main.css";
 
 const Video = styled.video`
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  top: 0;
+  left: 0;
 `;
 
 const Main = styled.div`
