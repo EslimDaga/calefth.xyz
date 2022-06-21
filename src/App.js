@@ -12,7 +12,7 @@ const Video = styled.video`
 `;
 
 const Main = styled.div`
-  background: rgba(158, 212, 243, 0.6);
+  background: rgba(24, 96, 179, 0.5);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -21,7 +21,7 @@ const Main = styled.div`
 `;
 
 const Title = styled.h1`
-  color: #f8cf2d;
+  color: #F8CF2D;
   margin: 0;
   padding: 0;
   letter-spacing: 2px;
@@ -29,16 +29,32 @@ const Title = styled.h1`
   font-family: "Pacifico";
 `;
 
+const Subtitle = styled.h2`
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 6px 6px 0px rgb(0 0 0 / 20%);
+  font-family: "Pacifico";
+`;
+
 const App = () => {
+
+  const today = new Date();
+  console.log(today);
+
   return (
     <>
-      <Video autoPlay muted loop src={video}></Video>
+      <Video autoPlay muted loop>
+        <source src={video} type="video/mp4" />
+      </Video>
       <Main>
         <div className="flex h-screen">
           <div className="m-auto">
-            <Title className="text-[35px] sm:text-[40px] md:text-[45px] lg:text-[50px]">
+            <Title className="text-center text-[35px] sm:text-[40px] md:text-[45px] lg:text-[50px]">
               ❤️ Calefth Manasés 💙
             </Title>
+            <Subtitle className="text-center text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px]">
+              ¡He nacido! el 11/03/2017 00:00:00
+            </Subtitle>
           </div>
         </div>
       </Main>
