@@ -53,7 +53,7 @@ const App = () => {
               ❤️ Calefth Manasés 💙
             </Title>
             <Subtitle className="text-center text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px]">
-              ¡He nacido! el 11/03/2017 00:00:00
+              ¡He nacido! el 11/03/2017
             </Subtitle>
           </div>
         </div>
